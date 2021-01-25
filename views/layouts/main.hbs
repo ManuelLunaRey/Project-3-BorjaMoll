@@ -7,14 +7,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
         <link rel="stylesheet" href="/css">
 
-
->>>>>>> 9bec5c5c467beff627ee1fb540d9d19b64749a4b
     <title>Example App</title>
 </head>
 <body>
- 
+    {{> _header}}
     {{{body}}}
 
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+     </script>
+     <script>
+         M.Sidenav.init(document.querySelector('.sidenav'))
+     </script>
 </body>
 </html>

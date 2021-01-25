@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const mongoose = require('mongoose')
 
 const connectDB = async () => {
@@ -16,8 +16,6 @@ const connectDB = async () => {
     process.exit(1)
 }
 }
-=======
-
 const mongoose = require('mongoose')
 
 const connectDB = async () => {
@@ -36,4 +34,3 @@ const connectDB = async () => {
 }
 
 module.exports = connectDB
->>>>>>> 9bec5c5c467beff627ee1fb540d9d19b64749a4b
