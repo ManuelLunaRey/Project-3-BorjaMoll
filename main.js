@@ -6,3 +6,6 @@ app.get('/', function (req, res) {
 })
  
 app.listen(3000)
+
+// Routes
+app.use('/', require('./routes/index.'))

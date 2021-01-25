@@ -18,3 +18,9 @@ npm run dev
 # Run in production
 npm start
 ```
+## Interactive terminal
+To interact with a container that is running we use the following command
+
+```
+docker exec -it <name> bash
+```
