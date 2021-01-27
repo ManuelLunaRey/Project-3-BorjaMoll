@@ -1,25 +1,35 @@
 {
-  "name": "proyect-3",
+  "name": "restaurants_mevn_docker",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "Web de restaurants amb Express i MongoDB sobre Docker",
+  "main": "index.js",
   "scripts": {
     "start":"node main.js",
+    "dev": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cifpfbmoll/Proyect-3.git"
   },
+  "keywords": [
+    "express",
+    "mongodb",
+    "docker",
+    "restaurants",
+    "googlemaps"
+  ],
   "author": "Manuel luna rey",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/cifpfbmoll/Proyect-3/issues"
   },
   "homepage": "https://github.com/cifpfbmoll/Proyect-3#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "express-heandlebars": "^4.0.4"
+    "mongoose": "^5.9.2"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
