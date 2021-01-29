@@ -1,18 +1,20 @@
 const express = require('express')
 const router = express.Router()
 
-// @desc    Login/Landing page
-// @route GET /
-router.get('/', (req, res) =>{
-    res.render('login')
+const Restaurant = require('../models/Restaurant')
 
-})
-
-// @desc    Dashboard
-// @route GET /dashboard
-router.get('/dashboard', (req, res) =>{
-    res.send('dashboard')
-
+//desc Login/Landin page
+//@route get /
+router.get('/', async (req, res) => {
+  try {
+    const restaurants = await Restaurant.find({ }).lean()
+    res.render('home', {
+      restaurants,
+    })
+  } catch (err) {
+    console.error(err)
+    res.render('error/500')
+  }
 })
 
 module.exports = router
