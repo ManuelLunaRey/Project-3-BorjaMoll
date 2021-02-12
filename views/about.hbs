@@ -1,1 +1,131 @@
-<h1>holaaaaaaa</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.imagenes{
+  width:300px;
+  height:300px;
+  object-fit:cover;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  width: 100%;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #ff8c1a;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 50px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>our page for restaurants offers your business the solutions you need to make the most of the large volume of public,<br> we have and fill your restaurant with customers from the area and from around the world.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img/manu.jpeg" class="imagenes" alt="Manu" style="width:100%">
+      <div class="container">
+        <h2>Manuel Luna Rey</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Descripcion.</p>
+        <p>Mluna@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="img/jose.jpeg" class="imagenes" alt="Jose" style="width:100%" >
+      <div class="container">
+        <h2>Jose Cabrera Palou</h2>
+        <p class="title">Art Director</p>
+        <p>Descripcion.</p>
+        <p>jose@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="img/camilo.jpeg" class="imagenes"alt="Camilo" style="width:100%">
+      <div class="container">
+        <h2>Juan Camilo Benitez</h2>
+        <p class="title">Graphic Designer</p>
+        <p>The Graphic Designer job description includes the entire process of defining requirements, visualizing and creating graphics including illustrations, logos, layouts and photos. You’ll be the one to shape the visual aspects of websites, books, magazines, product packaging, exhibitions and more.</p>
+        <p>jcbenitez@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
