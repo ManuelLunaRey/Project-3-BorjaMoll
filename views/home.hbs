@@ -1,0 +1,25 @@
+<h1>Mostrar restaurants</h1>
+{{#if restaurants}}
+    <table class="stripped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each restaurants}}
+                <tr>
+                    <td><a href="/restaurant/{{_id}}">{{name}}</a></td>
+                    <td>{{createdAt}}</td>
+                    <td><span class="dash-status">{{status}}</span></td>
+                </tr>
+            {{/each}}
+        </tbody>
+
+    </table>
+{{else}}
+    <p>hola que tal</p>
+{{/if}}

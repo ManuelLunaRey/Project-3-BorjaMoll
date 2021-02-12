@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.nav-wrapper .fa-bars {
+  font-size: 25px;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+.story-text {
+  height: 120px;
+}
+
+.dash-status {
+  text-transform: capitalize;
+}
+
+#delete-form {
+  display: inline;
+}
+.container {
+  width: 100%;
+  background: #ff8c1a;
+}
+.container2 {
+  width: 100%;
+  background: #ff8c1a;
+}
+.container img{
+  width: 54px;
+  float: left;
+  margin: 5px;
+ }
+
+ 
