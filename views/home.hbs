@@ -1,25 +1,36 @@
 <h1>Mostrar restaurants</h1>
+<div class="cartas">
 {{#if restaurants}}
-    <table class="stripped">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Date</th>
-                <th>Status</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            {{#each restaurants}}
-                <tr>
-                    <td><a href="/restaurant/{{_id}}">{{name}}</a></td>
-                    <td>{{createdAt}}</td>
-                    <td><span class="dash-status">{{status}}</span></td>
-                </tr>
-            {{/each}}
-        </tbody>
-
-    </table>
+{{#each restaurants}}
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/{{img}}">
+                  
+                </div>
+                <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">{{name}}<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{name}}<i class="material-icons right">close</i></span>
+                    <table>
+                        <tr>
+                            <th>Locality</th>
+                            <th>Price index</th>
+                            <th>Rating</th>
+                            <th>Phone</th>
+                        </tr>
+                        <tr>
+                            <th>{{locality}}</th>
+                            <th>{{price_index}}</th>
+                            <th>{{rate}}</th>
+                            <th>{{phone}}</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    {{/each}}
 {{else}}
     <p>hola que tal</p>
 {{/if}}
+</div>
