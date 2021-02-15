@@ -48,3 +48,8 @@ footer {
    float: left;
    margin: 10px;
   }
+  .images{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+  }

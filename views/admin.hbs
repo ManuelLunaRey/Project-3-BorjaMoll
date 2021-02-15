@@ -1,0 +1,30 @@
+<h1>Mostrar restaurants</h1>
+<div class="cartas">
+{{#if restaurants}}
+                <table>
+                     <tr>
+                            <th>Name</th>
+                            <th>Locality</th>
+                            <th>Price index</th>
+                            <th>Rating</th>
+                            <th>Phone</th>
+                        </tr>
+{{#each restaurants}}
+                    
+                       
+                        <tr>
+                            <th>{{name}}</th>
+                            <th>{{locality}}</th>
+                            <th>{{price_index}}</th>
+                            <th>{{rate}}</th>
+                            <th>{{phone}}</th>
+                        </tr>
+                   
+                    
+    {{/each}}
+     </table>
+    <button onclick="location.href='http://localhost:3000/agregar'">Añadir Restaurantes</button>
+{{else}}
+    <p>hola que tal</p>
+{{/if}}
+</div>
