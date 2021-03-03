@@ -53,3 +53,19 @@ footer {
     height:300px;
     object-fit:cover;
   }
+  .images1{
+    width:100%;
+    height: 600px;
+  }
+
+  .InfoResZona{
+    background:  #8c7f7c;
+      }
+  .InfoRes{
+    background:  #8c7f7c;
+      }
+      .row {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
