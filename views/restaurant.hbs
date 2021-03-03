@@ -1,0 +1,42 @@
+<script>
+      let cont = 1
+</script>
+{{#if restaurants}}
+<img class="images1" src="/img/{{restaurants.img}}">
+
+<div class="restaurante">
+<h3>{{restaurants.name}}</h3>
+<div class="InfoResZona">
+    <h5>Informacion del restaurante Personal</h5>
+    <p>Direcion del restaurante es en la: {{restaurants.direccion}}</p>
+    <p>La locaidad es: {{restaurants.locality}}</p>
+    <p>Codigo posta: {{restaurants.postalcode}}</p>
+    <p>El numero de telefono es: {{restaurants.phone}}</p>
+    <p>El GMAIL del restaurantes es: {{restaurants.email}}</p>
+</div>
+
+<div class="InfoRes">
+    <h5>Informacion del restaurante que te puede interesar</h5>
+    <p>{{restaurants.price_index}}</p>
+    <p>{{restaurants.rate}}</p>
+    <p>{{restaurants.timetable}}</p>
+                    <table>
+                     <tr>
+                            <th>Name Type Kitchen</th>
+                        </tr>
+                        {{#each restaurants.typeKitchen}}
+
+                        <tr>
+                            <th>{{this}}</th>
+                        </tr>
+                        {{/each}}
+                         </table>
+</div>
+<a href="{{restaurants.web}}">Clica aqui para ver la pagina web del restaurante!</a>
+</div>
+
+
+
+
+{{/if}}
+</div>

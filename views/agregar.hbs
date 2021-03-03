@@ -1,21 +1,77 @@
 <h1>Agregar restaurants</h1>
-    <form action="">
-  
-      <label for="fname">Name the restaurant</label>
-      <input type="text" id="fname" name="firstname" placeholder="restaurant...">
-  
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-  
-      <label for="country">Country</label>
-      <select id="country" name="country">
-        <option value="australia">Spain</option>
-        <option value="canada">Andorra</option>
-        <option value="usa">Germany</option>
-      </select>
-  
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      <input type="submit" value="Submit">
-      <input type="button" value="Cancelar" onclick="location.href='http://localhost:3000/admin'">
+  <div class="row">
+    <form action="/agregar" method="POST" class="col s12" >
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="name" type="text" class="validate" name="name">
+          <label for="name">Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="rate" type="number" class="validate" name="rate">
+          <label for="rate">Rate</label>
+        </div>
+         <div class="input-field col s6">
+          <input id="phone" type="number" class="validate" name="phone" >
+          <label for="phone">Phone</label>
+        </div>
+        
+        <div class="input-field col s6">
+          <input id="price_index" type="number" class="validate" step="0.01" name="price_index" >
+          <label for="price_index">Price index</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="direccion" type="text" class="validate" name="direccion" >
+          <label for="direccion">Direccion</label>
+        </div>
+      </div>
+            <div class="row">
+        <div class="input-field col s12">
+          <input id="img" type="text" class="validate" name="img" >
+          <label for="img">Nombre  de la imagen del Restaurante</label>
+        </div>
+      </div>
+      <div >
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" name="email" >
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="input-field col s12">
+          <input id="Terrace" type="text" class="validate" name="Terrace" >
+          <label for="Terrace">Terrace</label>
+        </div>
+      </div>
+            </div>
+      <div class="input-field col s12">
+          <input id="Capacity" type="number" class="validate" name="Capacity" >
+          <label for="Capacity">Capacity</label>
+        </div>
+      </div>
+      <div class="input-field col s12">
+          <input id="home_service" type="text" class="validate" name="home_service" >
+          <label for="home_service">Home Service</label>
+        </div>
+      </div>
+            <div class="input-field col s12">
+          <input id="postalcode" type="number" class="validate" name="postalcode" >
+          <label for="postalcode">Postal Code</label>
+        </div>
+      </div>
+            <div class="input-field col s12">
+          <input id="timetable" type="text" class="validate" name="timetable" >
+          <label for="timetable">Timetable</label>
+        </div>
+      </div>
+            <div class="input-field col s12">
+          <input id="web" type="text" class="validate" name="web" >
+          <label for="web">Web del restaurante</label>
+        </div>
+      </div>
+        <div class="row">
+            <input type="submit" value="Save" class="btn">
+            <a href="/admin" class="btn orange">Cancel</a>
+        </div>
     </form>
+</div>
