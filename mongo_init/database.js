@@ -58,7 +58,7 @@ db.restaurants.insert({
   _id :  ObjectId('603518dbb2131d41b9e71e8d'),
   name: "Bar Bocados",
   rate: 10,
-  locality: "Sa indioteria",
+  locality: "Palma",
   direccion: "Camino de la vida ",
   price_index: 6.2,
   img: "BarBocados.jpeg",

@@ -75,7 +75,7 @@ router.get('/agregar', (req, res) => {
 router.post('/agregar', async (req, res) => {
     try{
         console.log(req)
-       req.body.user = req.user.id
+       req.body.user = req.user
        
        await restaurant.create(req.body)
        res.redirect('admin')

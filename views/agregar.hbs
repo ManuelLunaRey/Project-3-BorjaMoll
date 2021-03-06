@@ -2,6 +2,7 @@
   <div class="row">
     <form action="/agregar" method="POST" class="col s12" >
       <div class="row">
+        
         <div class="input-field col s6">
           <input placeholder="Placeholder" id="name" type="text" class="validate" name="name">
           <label for="name">Name</label>
@@ -20,6 +21,11 @@
           <label for="price_index">Price index</label>
         </div>
       </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="locality" type="text" class="validate" name="locality" >
+          <label for="locality">Locality</label>
+        </div>
       <div class="row">
         <div class="input-field col s12">
           <input id="direccion" type="text" class="validate" name="direccion" >
@@ -68,7 +74,13 @@
           <input id="web" type="text" class="validate" name="web" >
           <label for="web">Web del restaurante</label>
         </div>
+        
       </div>
+        <div class="row">
+        <div class="input-field col s12">
+          <input id="typeKitchen" type="text" class="validate" name="typeKitchen" >
+          <label for="typeKitchen">TypeKitchen</label>
+        </div>
         <div class="row">
             <input type="submit" value="Save" class="btn">
             <a href="/admin" class="btn orange">Cancel</a>
