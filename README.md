@@ -21,7 +21,5 @@ To interact with a container that is running we use the following command
 
 ```
 docker exec -it <name> bash
-```
-npm run dev
 db.auth("admin","pass");
-docker system prune
+```
