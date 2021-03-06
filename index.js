@@ -20,12 +20,14 @@ app.engine('.hbs', exphbs({
 }));
 app.set('view engine', '.hbs');
 
-//Routes
-app.use('/', require('./routes/index'))
- 
 // Body parser
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
+
+//Routes
+app.use('/', require('./routes/index'))
+ 
+
 
 //Ports
 app.listen(PORT, function(){
