@@ -18,11 +18,30 @@ db.restaurants.insert({
   typeKitchen: [
     "Española","china"
   ],
-  platos: [
-   ObjectId('6034df4c99692eee14771690'), 
-   ObjectId('6034df4c99692eee14771691'), 
-   ObjectId('6034df4c99692eee14771692'), 
-   ObjectId('6034df4c99692eee14771693'), 
+  platos: [{
+    _id: ObjectId('6034df4c99692eee14771690'),
+    allergens: [
+      {
+          name: "fruto seco",
+          description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+          allergenEffects: "iritacion"
+      },
+      {
+        name: "mariscos",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects : "bomitos"
+      },
+      {
+        name: "carne",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      }
+ 
+ ],
+ name: "Pato a la pequinesa",
+ description: "Este plato tiene pato"
+  }
+   
   
   ],
 
@@ -46,12 +65,52 @@ db.restaurants.insert({
   typeKitchen: [
     "Española","Italiana"
   ],
-  platos: [
-    ObjectId('6034df4c99692eee14771690'), 
-    ObjectId('6034df4c99692eee14771691'), 
-    ObjectId('6034df4c99692eee14771692'), 
-    ObjectId('6034df4c99692eee14771693'), 
-   
+  platos: [{
+    _id: ObjectId('6034df4c99692eee14771692'),
+    allergens: [
+          {
+            name: "fruto seco",
+            description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+            allergenEffects: "iritacion"
+          },
+          {
+            name: "mariscos",
+            description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+            allergenEffects: "bomitos"
+          },
+          {
+            name: "carne",
+            description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+            allergenEffects: "bomitos"
+          }
+     
+     ],
+    nombre_del_plato: "Ensalada de garbanzos",
+    description: "Este plato tiene garbanzos"
+  },{
+    _id: ObjectId('6034df4c99692eee14771690'),
+    allergens: [
+      {
+          name: "fruto seco",
+          description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+          allergenEffects: "iritacion"
+      },
+      {
+        name: "mariscos",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects : "bomitos"
+      },
+      {
+        name: "carne",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      }
+ 
+ ],
+ name: "Pato a la pequinesa",
+ description: "Este plato tiene pato" 
+  }
+    
    ]
 })
 db.restaurants.insert({
@@ -73,11 +132,52 @@ db.restaurants.insert({
   typeKitchen: [
     "Argentina","Uruguaya"
   ],
-  platos: [
-    ObjectId('6034df4c99692eee14771690'), 
-    ObjectId('6034df4c99692eee14771691'), 
-    ObjectId('6034df4c99692eee14771692'), 
-    ObjectId('6034df4c99692eee14771693'), 
+  platos: [{
+    _id: ObjectId('6034df4c99692eee14771693'),
+    allergens : [
+      {
+        name: "fruto seco",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "iritacion"
+      },
+      {
+        name: "mariscos",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      },
+      {
+        name: "carne",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      }
+ 
+ ],
+ name: "Patatas brabas",
+ description: "Este plato tiene patatas"
+  },{
+    _id: ObjectId('6034df4c99692eee14771693'),
+    allergens : [
+      {
+        name: "fruto seco",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "iritacion"
+      },
+      {
+        name: "mariscos",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      },
+      {
+        name: "carne",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      }
+ 
+ ],
+ name: "Patatas con marisco fresco",
+ description: "Este plato tiene marisco"
+  }
+    
    
    ]
 })
@@ -100,11 +200,48 @@ db.restaurants.insert({
   typeKitchen: [
     "Española","Indu"
   ],
-  platos: [
-    ObjectId('6034df4c99692eee14771690'), 
-    ObjectId('6034df4c99692eee14771691'), 
-    ObjectId('6034df4c99692eee14771692'), 
-    ObjectId('6034df4c99692eee14771693'), 
+  platos: [{
+    _id: ObjectId('6034df4c99692eee14771693'),
+    allergens : [
+      {
+        name: "pescado",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "iritacion"
+      },
+      {
+        name: "lechuga",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      },
+      {
+        name: "palitos de cangrejo",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      }
+ 
+ ],
+ name: "Ensalada de pescado",
+ description: "Este plato tiene pescado"
+  },{
+    _id: ObjectId('6034df4c99692eee14771693'),
+    allergens : [
+      {
+        name: "lacteos",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "iritacion"
+      },
+      {
+        name: "patata",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      }
+     
+ 
+ ],
+ name: "pure de patata",
+ description: "Este plato tiene patatas"
+  }
+    
    
    ]
 
@@ -128,11 +265,51 @@ db.restaurants.insert({
   typeKitchen: [
     "Española"
   ],
-  platos: [
-    ObjectId('6034df4c99692eee14771690'), 
-    ObjectId('6034df4c99692eee14771691'), 
-    ObjectId('6034df4c99692eee14771692'), 
-    ObjectId('6034df4c99692eee14771693'), 
+  platos: [{
+    _id: ObjectId('6034df4c99692eee14771693'),
+    allergens : [
+      {
+        name: "trigo",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "iritacion"
+      },
+      {
+        name: "carne",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      },
+      {
+        name: "frutos secos",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      }
+ 
+ ],
+ name: "macarrones con frutos secos",
+ description: "Este plato tiene trigo"
+  },{
+    _id: ObjectId('6034df4c99692eee14771693'),
+    allergens : [
+      {
+        name: "lacteos",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "iritacion"
+      },
+      {
+        name: "trigo",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      },
+      {
+        name: "carne",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      }
+ 
+ ],
+ name: "pizza boloñesa",
+ description: "Este plato tiene lacteos"
+  }
    
    ]
 })
@@ -155,11 +332,52 @@ db.restaurants.insert({
   typeKitchen: [
     "Japonesa","China"
   ],
-  platos: [
-    ObjectId('6034df4c99692eee14771690'), 
-    ObjectId('6034df4c99692eee14771691'), 
-    ObjectId('6034df4c99692eee14771692'), 
-    ObjectId('6034df4c99692eee14771693'), 
+  platos: [{
+    _id: ObjectId('6034df4c99692eee14771693'),
+    allergens : [
+      {
+        name: "trigo",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "iritacion"
+      },
+      {
+        name: "carne",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      },
+      {
+        name: "frutos secos",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      }
+ 
+ ],
+ name: "macarrones fustichini",
+ description: "Este plato tiene trigo"
+  },{
+    _id: ObjectId('6034df4c99692eee14771693'),
+    allergens : [
+      {
+        name: "lacteos",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "iritacion"
+      },
+      {
+        name: "trigo",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      },
+      {
+        name: "carne",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      }
+ 
+ ],
+ name: "pizza bumisini",
+ description: "Este plato tiene lacteos" 
+  }
+     
    
    ]
 
@@ -183,10 +401,47 @@ db.restaurants.insert({
   typeKitchen : [
     "Española","china","Japonesa","Mexicana"
   ],
-  platos: [
-    ObjectId('6034df4c99692eee14771690'), 
-    ObjectId('6034df4c99692eee14771691'), 
-    ObjectId('6034df4c99692eee14771692'), 
-    ObjectId('6034df4c99692eee14771693'), 
+  platos: [{
+    _id: ObjectId('6034df4c99692eee14771693'),
+    allergens : [
+      {
+        name: "carne",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "iritacion"
+      },
+      {
+        name: "patatas",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      },
+      {
+        name: "frutos secos",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      }
+ 
+ ],
+ name: "Filete a la unichi",
+ description: "Este plato tiene carne"
+  },{
+    _id: ObjectId('6034df4c99692eee14771693'),
+    allergens : [
+      {
+        name: "frutos secos",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "iritacion"
+      },
+      {
+        name: "pescado",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        allergenEffects: "bomitos"
+      }
+      
+ 
+ ],
+ name: "ensalada de garbanzos",
+ description: "Este plato tiene frutos secos" 
+  }
+
    ]
 })
